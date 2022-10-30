@@ -1,0 +1,29 @@
+#! /usr/bin/expect --
+#
+set t1 [exec date +"%S.%N"]
+puts $t1
+
+spawn -noecho ssh -l okazaki mlx03
+expect -- "master] > "
+send -- "en\r"
+expect -- "master] # "
+
+set t2 [exec date +"%S.%N"]
+append t3 $t1 $t2
+puts $t2
+
+send -- "exit\r"
+
+set t3 [exec date +"%S.%N"]
+puts $t3
+
+append t $t1 $t2 $t3
+puts $t
+
+set t21  [expr $t2 - $t1]
+if {$t21 < 0.0} { set t21 [expr $t21 + 60.0] }
+puts $t21
+
+set t31  [expr $t3 - $t1]
+if {$t31 < 0.0} { set t31 [expr $t31 + 60.0] }
+puts $t31

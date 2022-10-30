@@ -1,0 +1,71 @@
+{
+  "table": [
+    {
+      "RackID": 1, 
+      "Type": "TX", 
+      "PortID": 0, 
+      "SubNetwork": "10.1.101.0/24", 
+      "MasterNode": "192.168.2.11",
+      "name": "P101"
+    }, 
+    {
+      "RackID": 2, 
+      "Type": "TX", 
+      "PortID": 1, 
+      "SubNetwork": "10.1.102.0/24", 
+      "MasterNode": "192.168.2.12",
+      "name": "P102"
+    }, 
+    {
+      "RackID": 3, 
+      "Type": "TX", 
+      "PortID": 2, 
+      "SubNetwork": "10.1.103.0/24", 
+      "MasterNode": "192.168.2.14",
+      "name": "P103"
+    }, 
+    {
+      "RackID": 4, 
+      "Type": "TX", 
+      "PortID": 3, 
+      "SubNetwork": "10.1.104.0/24", 
+      "MasterNode": "192.168.2.15",
+      "name": "P104"
+    }, 
+    {
+      "RackID": 1, 
+      "Type": "RX", 
+      "PortID": 4, 
+      "SubNetwork": "10.1.101.0/24", 
+      "MasterNode": "192.168.2.11",
+      "name": "P105"
+    }, 
+    {
+      "RackID": 2, 
+      "Type": "RX", 
+      "PortID": 5, 
+      "SubNetwork": "10.1.102.0/24", 
+      "MasterNode": "192.168.2.12",
+      "name": "P106"
+    }, 
+    {
+      "RackID": 3, 
+      "Type": "RX", 
+      "PortID": 6, 
+      "SubNetwork": "10.1.103.0/24", 
+      "MasterNode": "192.168.2.14",
+      "name": "P107"
+    }, 
+    {
+      "RackID": 4, 
+      "Type": "RX", 
+      "PortID": 7, 
+      "SubNetwork": "10.1.104.0/24", 
+      "MasterNode": "192.168.2.15",
+      "name": "P108"
+    }
+  ], 
+  "length": 8, 
+  "type": "port-rack5", 
+  "port_offset": 101
+}

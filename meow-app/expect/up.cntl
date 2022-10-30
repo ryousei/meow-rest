@@ -1,0 +1,64 @@
+#! /usr/bin/expect --
+#
+set send_slow {10 .001}
+set IF "ethernet 1/21"
+set updpwn "Up"
+#set timeout 1
+
+spawn -noecho ssh -l okazaki mlx03
+expect -- "master] > "
+send -- "en\r"
+expect -- "master] # "
+
+#if { "YES" == "YES" } {
+if { "YES" == "NO" } {
+   send -- "configure terminal\r"
+   expect "(config) # "
+   #send -- "interface $IF shutdown\r"
+   #expect "(config) # "
+   send -- "interface $IF no shutdown\r"
+   expect "(config) # "
+}
+
+# send "show clock\r"
+# puts [exec date] 
+
+# set t1 "TIME1: "
+set t2a [exec date +"%S.%N"]
+# append t3 $t1  $t2
+# puts $t3
+
+# send -- "show interface $IF status | include \"Up\|Down\" \r"
+send -- "show interface $IF status \r"
+expect {
+    -exact " Up " {
+        puts "UP"
+        # puts "$expect_out(1,string)\r"
+	send "exit\r"
+    }
+
+    -exact " Down " {
+        puts "Down"
+        #puts "$expect_out(1,string)\r"
+	send -- "show interface $IF status | include \"Up\|Down\" \r"
+	# sleep 1
+	#puts [exec date +"%S.%N"]
+	exp_continue
+    }
+}
+
+# set t1 "TIME2: "
+set t2b [exec date +"%S.%N"]
+#append t3 $t1 $t2
+#puts $t3
+set t2d  [expr $t2b - $t2a]
+#puts $t2d
+#puts $t2b
+#puts $t2a
+if {$t2d < 0.0} { set t2d [expr $t2d + 60.0] }
+append t2dp "TIME: " $t2d
+puts "$t2dp"
+
+expect "master] # "
+send -- "exit\r"
+

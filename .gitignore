@@ -1,0 +1,14 @@
+*.class
+*.jar
+*.war
+*.ear
+*~
+.old
+.keep
+.vs
+
+Thumbs.db
+.DS_Store
+
+target
+

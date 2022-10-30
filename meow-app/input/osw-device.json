@@ -1,0 +1,7 @@
+{
+"type":"osw-device5",
+"length":1, "osw_offset":101,
+"table":[
+{"SwID":0, "MasterID":0, "SlaveID":0}
+]
+}

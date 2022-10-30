@@ -1,0 +1,10 @@
+{
+"type":"master5",
+"t_length":2,
+"p_length":2,
+"m_length":1, "master_offset":0,
+"table":[
+{"PlaneID":0, "MasterID":0, "port":54890, "IP":"192.168.0.10", "user":"meowadmin", "pass":""},
+{"PlaneID":1, "MasterID":0, "port":54892, "IP":"192.168.0.10", "user":"meowadmin", "pass":""}
+]
+}

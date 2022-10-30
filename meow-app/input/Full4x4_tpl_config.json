@@ -1,0 +1,26 @@
+{
+"type":"config",
+"length":16, "port_offset":101, "osw_offset":101, "lsw_offset":0,
+"table":[
+    {"index":0, "src":0, "dst":4, "osw_id":0, "osw_in":1, "osw_out":5}, 
+    {"index":1, "src":0, "dst":5, "osw_id":0, "osw_in":1, "osw_out":6, "rv_src":1, "rv_dst":4, "rv_osw_id":0, "rv_osw_in":2, "rv_osw_out":5},
+    {"index":2, "src":0, "dst":6, "osw_id":0, "osw_in":1, "osw_out":7, "rv_src":2, "rv_dst":4, "rv_osw_id":0, "rv_osw_in":3, "rv_osw_out":5},
+    {"index":3, "src":0, "dst":7, "osw_id":0, "osw_in":1, "osw_out":8, "rv_src":3, "rv_dst":4, "rv_osw_id":0, "rv_osw_in":4, "rv_osw_out":5},
+
+    {"index":4, "src":1, "dst":4, "osw_id":0, "osw_in":2, "osw_out":5, "rv_src":0, "rv_dst":5, "rv_osw_id":0, "rv_osw_in":1, "rv_osw_out":6},
+    {"index":5, "src":1, "dst":5, "osw_id":0, "osw_in":2, "osw_out":6}, 
+    {"index":6, "src":1, "dst":6, "osw_id":0, "osw_in":2, "osw_out":7, "rv_src":2, "rv_dst":5, "rv_osw_id":0, "rv_osw_in":3, "rv_osw_out":6},
+    {"index":7, "src":1, "dst":7, "osw_id":0, "osw_in":2, "osw_out":8, "rv_src":3, "rv_dst":5, "rv_osw_id":0, "rv_osw_in":4, "rv_osw_out":6},
+
+    {"index":8, "src":2, "dst":4, "osw_id":0, "osw_in":3, "osw_out":5, "rv_src":0, "rv_dst":6, "rv_osw_id":0, "rv_osw_in":1, "rv_osw_out":7},
+    {"index":9, "src":2, "dst":5, "osw_id":0, "osw_in":3, "osw_out":6, "rv_src":1, "rv_dst":6, "rv_osw_id":0, "rv_osw_in":2, "rv_osw_out":7},
+    {"index":10, "src":2, "dst":6, "osw_id":0, "osw_in":3, "osw_out":7},
+    {"index":11, "src":2, "dst":7, "osw_id":0, "osw_in":3, "osw_out":8, "rv_src":3, "rv_dst":6, "rv_osw_id":0, "rv_osw_in":4, "rv_osw_out":7},
+
+    {"index":12, "src":3, "dst":4, "osw_id":0, "osw_in":4, "osw_out":5, "rv_src":0, "rv_dst":7, "rv_osw_id":0, "rv_osw_in":1, "rv_osw_out":8},
+    {"index":13, "src":3, "dst":5, "osw_id":0, "osw_in":4, "osw_out":6, "rv_src":1, "rv_dst":7, "rv_osw_id":0, "rv_osw_in":2, "rv_osw_out":8},
+    {"index":14, "src":3, "dst":6, "osw_id":0, "osw_in":4, "osw_out":7, "rv_src":2, "rv_dst":7, "rv_osw_id":0, "rv_osw_in":3, "rv_osw_out":8},
+    {"index":15, "src":3, "dst":7, "osw_id":0, "osw_in":4, "osw_out":7},
+    {}
+]
+}

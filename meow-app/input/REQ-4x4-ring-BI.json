@@ -1,0 +1,10 @@
+{"requests":[
+    {"dir":"BI","src":"K0001","dst":" K0002","user":"meowadmin",
+     "hosts":["K0001-001", "K0002-001"]},
+    {"dir":"BI","src":"K0002","dst":" K0004","user":"meowadmin",
+     "hosts":["K0002-001", "K0004-001"]},
+    {"dir":"BI","src":"K0004","dst":" K0003","user":"meowadmin",
+     "hosts":["K0004-001", "K0003-001"]},
+    {"dir":"BI","src":"K0003","dst":" K0001","user":"meowadmin",
+     "hosts":["K0003-001", "K0001-001"]}
+]}
